@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angkringan Latar Omah</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: url('img/angkringan6.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .section {
+            padding: 80px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Usaha Kuliner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Halaman Utama -->
+    <div class="hero" id="home">
+        <div>
+            <h1 class="display-4">Selamat Datang di Angkringan Latar Omah</h1>
+            <p class="lead">Kami menyediakan hidangan terbaik untuk Anda</p>
+            <a href="#profile" class="btn btn-primary">Lihat Lebih Banyak</a>
+        </div>
+    </div>
+
+    <!-- Profil -->
+    <div class="container section" id="profile">
+        <h2 class="text-center mb-4">Profil Kami</h2>
+        <p class="text-center">Kami adalah usaha Angkringan dengan pengalaman bertahun-tahun dalam menghadirkan Menu Yang Beragam.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/angkringan5.jpg" class="img-fluid rounded" alt="Profile"  style="height: 450px; height: 400px;">
+            </div>
+            <div class="col-md-6">
+                <p>kami menyediakan berbagai hidangan yang menggugah selera dan berbagai menu.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="bg-light section" id="about">
+        <div class="container">
+            <h2 class="text-center mb-4">Tentang Kami</h2>
+            <p class="text-center">Kami berdedikasi untuk memberikan pelayanan terbaik kepada pelanggan kami.</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Pengalaman</h4>
+                    <p>Lebih dari 2 tahun usaha ini berjalan.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Bahan Segar</h4>
+                    <p>Menggunakan bahan berkualitas tinggi dan segar.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Pelayanan Cepat</h4>
+                    <p>Pelayanan yang ramah dan cepat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container section" id="menu">
+        <h2 class="text-center mb-4">Menu Kami</h2>
+        <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <h4>Mendoan</h4>
+                            <img src="img/menu1.jpg" class="img-fluid rounded" alt="Mendoan"  style="height: 400px; height: 350px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Mie</h4>
+                            <img src="img/menu2.jpg" class="img-fluid rounded" alt="Mie"  style="height: 400px; height: 350px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <h4>Minuman</h4>
+                            <img src="img/menu3.jpg" class="img-fluid rounded" alt="Dessert"  style="height: 400px; height: 350px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Nasi kucing, dll</h4>
+                            <img src="img/menu4.jpg" class="img-fluid rounded" alt="Minuman" style="height: 400px; height: 350px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Usaha Angkringan. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
